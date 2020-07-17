@@ -11,7 +11,7 @@ public class TC_Login extends TestManager {
     public void loginTest() {
         super.setup();
 
-        driver.get(baseURL);
+        driver.get(signInURL);
         logger.info("URL is opened");
 
         driver.manage().window().maximize();

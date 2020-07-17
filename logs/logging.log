@@ -1,0 +1,8 @@
+2020-07-17 16:50:59 INFO  MyStore:15 - URL is opened
+2020-07-17 16:51:00 INFO  MyStore:20 - Entered username
+2020-07-17 16:51:00 INFO  MyStore:23 - Entered password
+2020-07-17 16:51:01 INFO  MyStore:29 - Login test passed
+2020-07-17 16:51:33 INFO  MyStore:15 - URL is opened
+2020-07-17 16:51:35 INFO  MyStore:20 - Entered username
+2020-07-17 16:51:35 INFO  MyStore:23 - Entered password
+2020-07-17 16:51:36 INFO  MyStore:29 - Login test passed

@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestManager {
 
-    public String baseURL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
+    public String signInURL = "http://automationpractice.com/index.php?controller=authentication&back=my-account";
     public String emailAddress = "yanatest@mail.com";
     public String password = "123-QAZxsw";
     public static WebDriver driver;
