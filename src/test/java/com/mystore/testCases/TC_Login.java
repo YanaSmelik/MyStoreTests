@@ -12,13 +12,25 @@ public class TC_Login extends TestManager {
         super.setup();
 
         driver.get(baseURL);
+        logger.info("URL is opened");
+
+        driver.manage().window().maximize();
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmailAddress(emailAddress);
+        logger.info("Entered username");
+
         signInPage.enterPassword(password);
+        logger.info("Entered password");
+
         signInPage.clickSignInButton();
 
-        Assert.assertTrue(driver.getTitle().equals("My account - My Store"));
-
+        if(driver.getTitle().equals("My account - My Store")){
+            Assert.assertTrue(true);
+            logger.info("Login test passed");
+        }else {
+            Assert.assertTrue(false);
+            logger.info("Login test failed");
+        }
         super.closeDown();
     }
 
