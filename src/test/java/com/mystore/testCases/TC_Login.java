@@ -1,7 +1,6 @@
 package com.mystore.testCases;
-
+import org.testng.annotations.Test;
 import com.mystore.pageObjects.SignInPage;
-import org.junit.jupiter.api.Test;
 import org.testng.Assert;
 
 public class TC_Login extends TestManager {

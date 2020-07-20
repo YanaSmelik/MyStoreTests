@@ -22,6 +22,7 @@ public class TestManager {
 
     }
 
+
     public void setup() {
         System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
         driver = new ChromeDriver();
