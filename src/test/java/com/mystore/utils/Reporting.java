@@ -54,6 +54,7 @@ public class Reporting extends TestListenerAdapter {
     public void onTestSuccess(ITestResult result) {
         logger = extentReport.createTest(result.getName()); // new entry in the test report
         logger.log(Status.PASS, MarkupHelper.createLabel(result.getHost(), ExtentColor.GREEN));
+        extentReport.flush();
     }
 
 
