@@ -6,3 +6,18 @@
 2020-07-22 16:40:23 INFO  MyStore:19 - Entered username
 2020-07-22 16:40:23 INFO  MyStore:22 - Entered password
 2020-07-22 16:40:34 INFO  MyStore:28 - Login test passed
+2020-07-23 16:13:18 INFO  MyStore:16 - URL is opened
+2020-07-23 16:13:19 INFO  MyStore:21 - Entered username
+2020-07-23 16:13:20 INFO  MyStore:24 - Entered password
+2020-07-23 16:16:53 INFO  MyStore:16 - URL is opened
+2020-07-23 16:16:55 INFO  MyStore:21 - Entered username
+2020-07-23 16:16:55 INFO  MyStore:24 - Entered password
+2020-07-23 16:24:33 INFO  MyStore:16 - URL is opened
+2020-07-23 16:24:34 INFO  MyStore:21 - Entered username
+2020-07-23 16:24:35 INFO  MyStore:24 - Entered password
+2020-07-23 16:26:51 INFO  MyStore:16 - URL is opened
+2020-07-23 16:26:52 INFO  MyStore:21 - Entered username
+2020-07-23 16:26:52 INFO  MyStore:24 - Entered password
+2020-07-23 16:28:59 INFO  MyStore:16 - URL is opened
+2020-07-23 16:29:00 INFO  MyStore:21 - Entered username
+2020-07-23 16:29:00 INFO  MyStore:24 - Entered password

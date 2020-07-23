@@ -59,7 +59,7 @@ public class Reporting extends TestListenerAdapter {
 
 
     public void onTestFailure(ITestResult result) {
-        logger = extentReport.createTest(result.getName());
+        logger = extentReport.createTest(result.getName()); // .getName() returns the name of @Test, e.g. loginTest
         logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName(), ExtentColor.RED));
 
         String screenshotPath = System.getProperty("user.dir") + "\\Screenshots\\" + result.getName() + ".png";
@@ -73,5 +73,6 @@ public class Reporting extends TestListenerAdapter {
                 e.printStackTrace();
             }
         }
+        extentReport.flush();
     }
 }

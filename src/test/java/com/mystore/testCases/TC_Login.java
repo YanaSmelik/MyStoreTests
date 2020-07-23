@@ -3,11 +3,13 @@ import org.testng.annotations.Test;
 import com.mystore.pageObjects.SignInPage;
 import org.testng.Assert;
 
+import java.io.IOException;
+
 public class TC_Login extends TestManager {
 
 
     @Test
-    public void loginTest() {
+    public void loginTest() throws IOException {
         super.setup();
 
         driver.get(signInURL);
@@ -27,6 +29,7 @@ public class TC_Login extends TestManager {
             Assert.assertTrue(true);
             logger.info("Login test passed");
         }else {
+            captureScreen(driver, "loginTest");
             Assert.assertTrue(false);
             logger.info("Login test failed");
         }
