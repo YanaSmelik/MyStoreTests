@@ -16,17 +16,20 @@ public class TestManager {
 
     public ReadConfig readConfig = new ReadConfig();
     public String signInURL = readConfig.getSignInURL();
-    public String emailAddress = readConfig.getEmailAddress();
+    public String email = readConfig.getEmail();
     public String password = readConfig.getPassword();
     public static WebDriver driver;
     public static Logger logger;
 
 
-    public TestManager(){
+    public TestManager() {
 
     }
 
 
+    /**
+     * Sets up configuration for a test to run. Initializes driver and logger
+     */
     public void setup() {
         System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
         driver = new ChromeDriver();
@@ -35,7 +38,7 @@ public class TestManager {
     }
 
 
-    public void closeDown(){
+    public void closeDown() {
         driver.quit();
     }
 

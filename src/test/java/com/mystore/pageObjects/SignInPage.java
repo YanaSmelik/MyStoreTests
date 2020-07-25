@@ -17,7 +17,7 @@ public class SignInPage {
 
     @FindBy(id = "email")
     @CacheLookup
-    WebElement emailAddressInputField;
+    WebElement emailInputField;
 
     @FindBy(id = "passwd")
     @CacheLookup
@@ -28,8 +28,8 @@ public class SignInPage {
     WebElement signInButton;
 
 
-    public void enterEmailAddress(String emailAddress){
-        emailAddressInputField.sendKeys(emailAddress);
+    public void enterEmail(String emailAddress){
+        emailInputField.sendKeys(emailAddress);
     }
 
     public void enterPassword(String password){

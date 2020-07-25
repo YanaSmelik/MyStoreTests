@@ -29,7 +29,7 @@ public class ReadConfig {
     }
 
 
-    public String getEmailAddress(){
+    public String getEmail(){
         return properties.getProperty("emailAddress");
     }
 

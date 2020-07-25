@@ -21,3 +21,10 @@
 2020-07-23 16:28:59 INFO  MyStore:16 - URL is opened
 2020-07-23 16:29:00 INFO  MyStore:21 - Entered username
 2020-07-23 16:29:00 INFO  MyStore:24 - Entered password
+2020-07-25 16:09:12 INFO  MyStore:24 - URL is opened
+2020-07-25 16:09:13 INFO  MyStore:32 - email is provided
+2020-07-25 16:09:13 INFO  MyStore:35 - password is provided
+2020-07-25 16:09:15 INFO  MyStore:41 - Login test passed
+2020-07-25 16:09:22 INFO  MyStore:24 - URL is opened
+2020-07-25 16:09:23 INFO  MyStore:32 - email is provided
+2020-07-25 16:09:23 INFO  MyStore:35 - password is provided

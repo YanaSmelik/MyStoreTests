@@ -26,7 +26,7 @@ public class XLUtils {
     }
 
 
-    public static int getRowCount(String xlFile, String xlSheet) throws IOException {
+    public static int getRowsTotalNum(String xlFile, String xlSheet) throws IOException {
         input = new FileInputStream(xlFile);
         workbook = new XSSFWorkbook(input);
         worksheet = workbook.getSheet(xlSheet);
@@ -37,7 +37,7 @@ public class XLUtils {
     }
 
 
-    public static int getCellCount(String xlFile, String xlSheet, int rowNumber) throws IOException {
+    public static int getCellsNumber(String xlFile, String xlSheet, int rowNumber) throws IOException {
         input = new FileInputStream(xlFile);
         workbook = new XSSFWorkbook(input);
         worksheet = workbook.getSheet(xlSheet);

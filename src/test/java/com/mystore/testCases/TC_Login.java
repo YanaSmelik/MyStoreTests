@@ -17,7 +17,7 @@ public class TC_Login extends TestManager {
 
         driver.manage().window().maximize();
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.enterEmailAddress(emailAddress);
+        signInPage.enterEmail(email);
         logger.info("Entered username");
 
         signInPage.enterPassword(password);
