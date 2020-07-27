@@ -15,6 +15,14 @@ public class SignInPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(id = "email_create")
+    @CacheLookup
+    WebElement emailCreateAccountTextField;
+
+    @FindBy(id = "SubmitCreate")
+    @CacheLookup
+    WebElement submitAccountButton;
+
     @FindBy(id = "email")
     @CacheLookup
     WebElement emailInputField;
@@ -28,8 +36,8 @@ public class SignInPage {
     WebElement signInButton;
 
 
-    public void enterEmail(String emailAddress){
-        emailInputField.sendKeys(emailAddress);
+    public void enterEmail(String email){
+        emailInputField.sendKeys(email);
     }
 
     public void enterPassword(String password){
@@ -38,5 +46,9 @@ public class SignInPage {
 
     public void clickSignInButton(){
         signInButton.click();
+    }
+
+    public void enterEmailCreateAccount(String email){
+        emailCreateAccountTextField.sendKeys(email);
     }
 }
