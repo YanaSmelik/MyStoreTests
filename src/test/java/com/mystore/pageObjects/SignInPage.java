@@ -21,7 +21,7 @@ public class SignInPage {
 
     @FindBy(id = "SubmitCreate")
     @CacheLookup
-    WebElement submitAccountButton;
+    WebElement createAccountButton;
 
     @FindBy(id = "email")
     @CacheLookup
@@ -50,5 +50,9 @@ public class SignInPage {
 
     public void enterEmailCreateAccount(String email){
         emailCreateAccountTextField.sendKeys(email);
+    }
+
+    public void clickCreateAccountButton(){
+        createAccountButton.click();
     }
 }
