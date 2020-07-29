@@ -8,7 +8,8 @@
     <test verbose="2" preserve-order="true" name="Test">
         <classes>
           <!--  <class name="com.mystore.testCases.TC_Login"/> -->
-            <class name="com.mystore.testCases.TC_LoginDDT">
+            <!--  <class name="com.mystore.testCases.TC_LoginDDT"> -->
+                 <class name="com.mystore.testCases.TC_CreateAccount">
             </class>
         </classes>
     </test>

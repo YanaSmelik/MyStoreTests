@@ -28,7 +28,7 @@ public class TestManager {
 
 
     /**
-     * Sets up configuration for a test to run. Initializes driver and logger
+     * Sets up configuration for a test to run. Initializes driver and logger (for logging)
      */
     public void setup() {
         System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
@@ -41,6 +41,7 @@ public class TestManager {
     public void closeDown() {
         driver.quit();
     }
+
 
 
     public void captureScreen(WebDriver driver, String fileName) throws IOException {

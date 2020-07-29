@@ -3,7 +3,7 @@ package com.mystore.testCases;
 import com.mystore.pageObjects.CreateAccountPage;
 import com.mystore.pageObjects.MyAccountPage;
 import com.mystore.pageObjects.SignInPage;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import java.io.IOException;
@@ -11,47 +11,72 @@ import java.io.IOException;
 public class TC_CreateAccount extends TestManager {
 
     @Test
-    public void createAccount() throws IOException {
+    public void createAccount() throws IOException, InterruptedException {
+        super.setup();
+        driver.get(signInURL);
+        logger.info("URL is opened");
+
+        driver.manage().window().maximize();
+
         SignInPage signInPage = new SignInPage(driver);
         signInPage.enterEmailCreateAccount("joetest2@mail.com");
         signInPage.clickCreateAccountButton();
 
+        //TODO implement explicit wait
+        Thread.sleep(3000);
+
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         createAccountPage.clickMrRadioButton();
         createAccountPage.enterFirstName("Joe");
+        logger.info("First name is provided");
         createAccountPage.enterLastName("Welsh");
-        createAccountPage.enterEmail("joetest2@mail.com");  // automatically filled
+        logger.info("Last name is provided");
+        //createAccountPage.enterEmail("joetest2@mail.com");  // automatically filled
+        //logger.info("Email is provided");
         createAccountPage.enterPassword(password);
+        logger.info("Password is provided");
         createAccountPage.selectFromDays("1");
         createAccountPage.selectFromMonths("1");
         createAccountPage.selectFromYears("1989");
+        logger.info("Date is provided");
         createAccountPage.clickNewsletterCheckBox();
         createAccountPage.clickSpecialOffersCheckBox();
-        createAccountPage.enterFirstNameAdr("Joe");  // automatically filled
-        createAccountPage.enterLastNameAdr("Welsh");  // automatically filled
+        //createAccountPage.enterFirstNameAdr("Joe");  // automatically filled
+        //createAccountPage.enterLastNameAdr("Welsh");  // automatically filled
         createAccountPage.enterCompany("Test");
+        logger.info("Company name is provided");
         createAccountPage.enterAddress1("614 Risus. Av, P.O. Box 116, Test");
+        logger.info("First address is provided");
         createAccountPage.enterAddress2("Test Air, Unit 5 The Merlin Center");
+        logger.info("Second address is provided");
         createAccountPage.enterCity("Mesa");
+        logger.info("City is provided");
         createAccountPage.selectFromStates("3");
+        logger.info("State is selected");
         createAccountPage.enterZip("85203");
+        logger.info("Zip code is provided");
         createAccountPage.selectFromCountries("21");
+        logger.info("Country is selected");
         createAccountPage.enterHomePhone("(567)321-6645");
+        logger.info("Home phone is provided");
         createAccountPage.enterMobilePhone("+1-202-555-0134");
+        logger.info("Mobile phone is provided");
         createAccountPage.enterAddressAlias("TestAdr");
+        logger.info("Email alias is provided");
         createAccountPage.clickRegisterButton();
+        logger.info("Registration data is submitted");
 
         MyAccountPage myAccountPage = new MyAccountPage(driver);
         boolean isSuccessful = myAccountPage.getOrderHistoryButton().isDisplayed();
-        if(isSuccessful){
+        if (isSuccessful) {
             Assert.assertTrue(true);
-        }else{
+            logger.info("createAccount test PASSED");
+        } else {
             captureScreen(driver, "createAccount");
             Assert.assertTrue(false);
+            logger.info("createAccount test FAILED");
         }
 
-
-
-
+        super.closeDown();
     }
 }

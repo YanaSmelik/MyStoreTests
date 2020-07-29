@@ -1,5 +1,6 @@
 package com.mystore.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -154,75 +155,75 @@ public class CreateAccountPage {
         daysDropDown.selectByValue(value);
     }
 
-    public void selectFromMonths(String value){
+    public void selectFromMonths(String value) {
         monthsDropDown.selectByValue(value);
     }
 
-    public void selectFromYears(String value){
+    public void selectFromYears(String value) {
         yearsDropDown.selectByValue(value);
     }
 
-    public void clickNewsletterCheckBox(){
+    public void clickNewsletterCheckBox() {
         newsletterCheckBox.click();
     }
 
-    public void clickSpecialOffersCheckBox(){
+    public void clickSpecialOffersCheckBox() {
         specialOffersCheckBox.click();
     }
 
-    public void enterFirstNameAdr(String firstName ){
+    public void enterFirstNameAdr(String firstName) {
         firsNameAddressTextField.sendKeys(firstName);
     }
 
-    public void enterLastNameAdr(String lastName){
+    public void enterLastNameAdr(String lastName) {
         lastNameAddressTextField.sendKeys(lastName);
     }
 
-    public void enterCompany(String company){
+    public void enterCompany(String company) {
         companyAddressTextField.sendKeys(company);
     }
 
-    public void enterAddress1(String address){
+    public void enterAddress1(String address) {
         addressTextField.sendKeys(address);
     }
 
-    public void enterAddress2(String address){
+    public void enterAddress2(String address) {
         address2TextField.sendKeys(address);
     }
 
-    public void enterCity(String city){
+    public void enterCity(String city) {
         cityTextField.sendKeys(city);
     }
 
-    public void selectFromStates(String value){
+    public void selectFromStates(String value) {
         stateDropDown.selectByValue(value);
     }
 
-    public void enterZip(String zip ){
+    public void enterZip(String zip) {
         zipTextField.sendKeys(zip);
     }
 
-    public void selectFromCountries(String value){
+    public void selectFromCountries(String value) {
         countryDropDown.selectByValue(value);
     }
 
-    public void enterAdditionalInfo(String info){
+    public void enterAdditionalInfo(String info) {
         additionalInfoTextField.sendKeys(info);
     }
 
-    public void enterHomePhone(String homePhone){
+    public void enterHomePhone(String homePhone) {
         homePhoneTextField.sendKeys(homePhone);
     }
 
-    public void enterMobilePhone(String mobilePhone){
+    public void enterMobilePhone(String mobilePhone) {
         mobilePhoneTextField.sendKeys(mobilePhone);
     }
 
-    public void enterAddressAlias(String alias){
+    public void enterAddressAlias(String alias) {
         addressAliasTextField.sendKeys(alias);
     }
 
-    public void clickRegisterButton(){
+    public void clickRegisterButton() {
         registerButton.click();
     }
 
