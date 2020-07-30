@@ -46,15 +46,27 @@ public class CreateAccountPage {
 
     @FindBy(id = "days")
     @CacheLookup
-    Select daysDropDown;
+    WebElement daysDropDown;
+
+    @FindBy(xpath = "//*[@id=\"days\"]/option[2]")
+    @CacheLookup
+    WebElement day;
 
     @FindBy(id = "months")
     @CacheLookup
-    Select monthsDropDown;
+    WebElement monthsDropDown;
+
+    @FindBy(xpath = "//*[@id=\"months\"]/option[3]")
+    @CacheLookup
+    WebElement month;
 
     @FindBy(id = "years")
     @CacheLookup
-    Select yearsDropDown;
+    WebElement yearsDropDown;
+
+    @FindBy(xpath = "//*[@id=\"years\"]/option[41]")
+    @CacheLookup
+    WebElement year;
 
     @FindBy(id = "newsletter")
     @CacheLookup
@@ -96,7 +108,11 @@ public class CreateAccountPage {
 
     @FindBy(id = "id_state")
     @CacheLookup
-    Select stateDropDown;
+    WebElement stateDropDown;
+
+    @FindBy(xpath = "//*[@id=\"id_state\"]/option[4]")
+    @CacheLookup
+    WebElement state;
 
     @FindBy(id = "postcode")
     @CacheLookup
@@ -104,7 +120,11 @@ public class CreateAccountPage {
 
     @FindBy(id = "id_country")
     @CacheLookup
-    Select countryDropDown;
+    WebElement countryDropDown;
+
+    @FindBy(xpath = "//*[@id=\"id_country\"]/option[2]")
+    @CacheLookup
+    WebElement country;
 
     @FindBy(id = "other")
     @CacheLookup
@@ -151,16 +171,20 @@ public class CreateAccountPage {
         passwordTextField.sendKeys(password);
     }
 
-    public void selectFromDays(String value) {
-        daysDropDown.selectByValue(value);
+    public void selectFromDays() {
+        daysDropDown.click();
+        day.click();
+
     }
 
-    public void selectFromMonths(String value) {
-        monthsDropDown.selectByValue(value);
+    public void selectFromMonths() {
+        monthsDropDown.click();
+        month.click();
     }
 
-    public void selectFromYears(String value) {
-        yearsDropDown.selectByValue(value);
+    public void selectFromYears() {
+        yearsDropDown.click();
+        year.click();
     }
 
     public void clickNewsletterCheckBox() {
@@ -195,16 +219,18 @@ public class CreateAccountPage {
         cityTextField.sendKeys(city);
     }
 
-    public void selectFromStates(String value) {
-        stateDropDown.selectByValue(value);
+    public void selectFromStates() {
+        stateDropDown.click();
+        state.click();
     }
 
     public void enterZip(String zip) {
         zipTextField.sendKeys(zip);
     }
 
-    public void selectFromCountries(String value) {
-        countryDropDown.selectByValue(value);
+    public void selectFromCountries() {
+        countryDropDown.click();
+        country.click();
     }
 
     public void enterAdditionalInfo(String info) {

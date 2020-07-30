@@ -35,9 +35,9 @@ public class TC_CreateAccount extends TestManager {
         //logger.info("Email is provided");
         createAccountPage.enterPassword(password);
         logger.info("Password is provided");
-        createAccountPage.selectFromDays("1");
-        createAccountPage.selectFromMonths("1");
-        createAccountPage.selectFromYears("1989");
+        createAccountPage.selectFromDays();
+        createAccountPage.selectFromMonths();
+        createAccountPage.selectFromYears();
         logger.info("Date is provided");
         createAccountPage.clickNewsletterCheckBox();
         createAccountPage.clickSpecialOffersCheckBox();
@@ -51,11 +51,11 @@ public class TC_CreateAccount extends TestManager {
         logger.info("Second address is provided");
         createAccountPage.enterCity("Mesa");
         logger.info("City is provided");
-        createAccountPage.selectFromStates("3");
+        createAccountPage.selectFromStates();
         logger.info("State is selected");
         createAccountPage.enterZip("85203");
         logger.info("Zip code is provided");
-        createAccountPage.selectFromCountries("21");
+        createAccountPage.selectFromCountries();
         logger.info("Country is selected");
         createAccountPage.enterHomePhone("(567)321-6645");
         logger.info("Home phone is provided");
