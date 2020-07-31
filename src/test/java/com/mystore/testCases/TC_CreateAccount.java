@@ -19,7 +19,7 @@ public class TC_CreateAccount extends TestManager {
         driver.manage().window().maximize();
 
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.enterEmailCreateAccount("joetest2@mail.com");
+        signInPage.enterEmailCreateAccount("joetest7@mail.com");
         signInPage.clickCreateAccountButton();
 
         //TODO implement explicit wait
@@ -31,18 +31,14 @@ public class TC_CreateAccount extends TestManager {
         logger.info("First name is provided");
         createAccountPage.enterLastName("Welsh");
         logger.info("Last name is provided");
-        //createAccountPage.enterEmail("joetest2@mail.com");  // automatically filled
-        //logger.info("Email is provided");
         createAccountPage.enterPassword(password);
         logger.info("Password is provided");
-        createAccountPage.selectFromDays();
-        createAccountPage.selectFromMonths();
-        createAccountPage.selectFromYears();
+        createAccountPage.selectFromDays("2");
+        createAccountPage.selectFromMonths("2");
+        createAccountPage.selectFromYears("1985");
         logger.info("Date is provided");
         createAccountPage.clickNewsletterCheckBox();
         createAccountPage.clickSpecialOffersCheckBox();
-        //createAccountPage.enterFirstNameAdr("Joe");  // automatically filled
-        //createAccountPage.enterLastNameAdr("Welsh");  // automatically filled
         createAccountPage.enterCompany("Test");
         logger.info("Company name is provided");
         createAccountPage.enterAddress1("614 Risus. Av, P.O. Box 116, Test");
@@ -51,11 +47,11 @@ public class TC_CreateAccount extends TestManager {
         logger.info("Second address is provided");
         createAccountPage.enterCity("Mesa");
         logger.info("City is provided");
-        createAccountPage.selectFromStates();
+        createAccountPage.selectFromStates("3");
         logger.info("State is selected");
         createAccountPage.enterZip("85203");
         logger.info("Zip code is provided");
-        createAccountPage.selectFromCountries();
+        createAccountPage.selectFromCountries("21");
         logger.info("Country is selected");
         createAccountPage.enterHomePhone("(567)321-6645");
         logger.info("Home phone is provided");

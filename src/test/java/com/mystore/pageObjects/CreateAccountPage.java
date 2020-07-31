@@ -1,6 +1,5 @@
 package com.mystore.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -48,25 +47,16 @@ public class CreateAccountPage {
     @CacheLookup
     WebElement daysDropDown;
 
-    @FindBy(xpath = "//*[@id=\"days\"]/option[2]")
-    @CacheLookup
-    WebElement day;
 
     @FindBy(id = "months")
     @CacheLookup
     WebElement monthsDropDown;
 
-    @FindBy(xpath = "//*[@id=\"months\"]/option[3]")
-    @CacheLookup
-    WebElement month;
 
     @FindBy(id = "years")
     @CacheLookup
     WebElement yearsDropDown;
 
-    @FindBy(xpath = "//*[@id=\"years\"]/option[41]")
-    @CacheLookup
-    WebElement year;
 
     @FindBy(id = "newsletter")
     @CacheLookup
@@ -171,20 +161,19 @@ public class CreateAccountPage {
         passwordTextField.sendKeys(password);
     }
 
-    public void selectFromDays() {
-        daysDropDown.click();
-        day.click();
-
+    public void selectFromDays(String value) {
+        Select daysDropDownSelect = new Select (daysDropDown);
+        daysDropDownSelect.selectByValue(value);
     }
 
-    public void selectFromMonths() {
-        monthsDropDown.click();
-        month.click();
+    public void selectFromMonths(String value) {
+        Select monthsDropDownSelect = new Select (monthsDropDown);
+        monthsDropDownSelect.selectByValue(value);
     }
 
-    public void selectFromYears() {
-        yearsDropDown.click();
-        year.click();
+    public void selectFromYears(String value) {
+        Select yearsDropDownSelect = new Select (yearsDropDown);
+        yearsDropDownSelect.selectByValue(value);
     }
 
     public void clickNewsletterCheckBox() {
@@ -219,18 +208,18 @@ public class CreateAccountPage {
         cityTextField.sendKeys(city);
     }
 
-    public void selectFromStates() {
-        stateDropDown.click();
-        state.click();
+    public void selectFromStates(String value) {
+        Select stateDropDownSelect = new Select (stateDropDown);
+        stateDropDownSelect.selectByValue(value);
     }
 
     public void enterZip(String zip) {
         zipTextField.sendKeys(zip);
     }
 
-    public void selectFromCountries() {
-        countryDropDown.click();
-        country.click();
+    public void selectFromCountries(String value) {
+        Select countryDropDownSelect = new Select (countryDropDown);
+        countryDropDownSelect.selectByValue(value);
     }
 
     public void enterAdditionalInfo(String info) {

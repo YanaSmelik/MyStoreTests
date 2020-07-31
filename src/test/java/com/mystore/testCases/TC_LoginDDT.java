@@ -1,6 +1,6 @@
 package com.mystore.testCases;
 
-import com.mystore.pageObjects.HeaderMenu;
+import com.mystore.pageObjects.CommonElements;
 import com.mystore.pageObjects.SignInPage;
 import com.mystore.utils.XLUtils;
 
@@ -25,7 +25,7 @@ public class TC_LoginDDT extends TestManager {
 
         driver.manage().window().maximize();
 
-        HeaderMenu headerMenu = new HeaderMenu(driver);
+        CommonElements commonElements = new CommonElements(driver);
         SignInPage signInPage = new SignInPage(driver);
 
         signInPage.enterEmail(email);
@@ -39,7 +39,7 @@ public class TC_LoginDDT extends TestManager {
         if (driver.getTitle().equals("My account - My Store")) {
             Assert.assertTrue(true);
             logger.info("Login test passed");
-            headerMenu.clickSignOutButton();
+            commonElements.clickSignOutButton();
         } else {
             Assert.assertTrue(false);
             logger.warn("Login test failed");
