@@ -16,6 +16,7 @@ public class TestManager {
 
     public ReadConfig readConfig = new ReadConfig();
     public String signInURL = readConfig.getSignInURL();
+    public String homePageURL = readConfig.getHomePageURL();
     public String email = readConfig.getEmail();
     public String password = readConfig.getPassword();
     public static WebDriver driver;

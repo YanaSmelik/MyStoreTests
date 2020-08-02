@@ -18,6 +18,7 @@ public class CommonElements {
         PageFactory.initElements(driver, this);
     }
 
+
     @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")
     @CacheLookup
     WebElement signOutButton;
@@ -25,6 +26,8 @@ public class CommonElements {
     @FindBy(xpath = "//*[@id=\"header_logo\"]/a/img")
     @CacheLookup
     WebElement storeLogo;
+
+
 
 
     public void clickSignOutButton(){

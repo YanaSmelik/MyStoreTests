@@ -3,6 +3,9 @@ package com.mystore.testCases;
 import com.mystore.pageObjects.CreateAccountPage;
 import com.mystore.pageObjects.MyAccountPage;
 import com.mystore.pageObjects.SignInPage;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
@@ -19,13 +22,14 @@ public class TC_CreateAccount extends TestManager {
         driver.manage().window().maximize();
 
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.enterEmailCreateAccount("joetest7@mail.com");
+        signInPage.enterEmailCreateAccount("joetest8@mail.com");
         signInPage.clickCreateAccountButton();
 
-        //TODO implement explicit wait
-        Thread.sleep(3000);
-
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
+
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.elementToBeClickable(createAccountPage.getMrRadioButton()));
+
         createAccountPage.clickMrRadioButton();
         createAccountPage.enterFirstName("Joe");
         logger.info("First name is provided");

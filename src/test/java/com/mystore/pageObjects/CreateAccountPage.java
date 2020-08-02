@@ -141,6 +141,10 @@ public class CreateAccountPage {
         mrRadioButton.click();
     }
 
+    public WebElement getMrRadioButton(){
+       return mrRadioButton;
+    }
+
     public void clickMrsRadioButton() {
         mrsRadioButton.click();
     }

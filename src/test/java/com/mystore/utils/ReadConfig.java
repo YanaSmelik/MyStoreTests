@@ -42,4 +42,8 @@ public class ReadConfig {
     public String getChromePath(){
         return properties.getProperty("chromePath");
     }
+
+    public String getHomePageURL(){
+        return properties.getProperty("homePageURL");
+    }
 }

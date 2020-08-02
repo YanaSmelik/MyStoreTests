@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="23548c68-0ebb-4902-9833-e44ba9517c9f" name="Default Changelist" comment="1. Created config.properties file for storing tests data. &#10;2. Modified log entries patterns &#10;3.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuratin/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuratin/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CreateAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CreateAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/HeaderMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_LoginDDT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_LoginDDT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/ReadConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/ReadConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +47,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5712644" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -178,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="699" y="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1594914949155" />
-    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser" timestamp="1596216256671">
+    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser" timestamp="1596291456419">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1596216256671" />
+    <state x="765" y="296" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1596291456419" />
     <state x="309" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596216452757">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -190,10 +196,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="327" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1596216784620" />
-    <state x="707" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595222240813">
+    <state x="707" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596288687144">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="707" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1160@0.0.1920.1160" timestamp="1595222240813" />
+    <state x="707" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1160@0.0.1920.1160" timestamp="1596288687144" />
     <state x="499" y="137" width="1188" height="818" key="CommitChangelistDialog2" timestamp="1595224220833">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -202,22 +208,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595221979612" />
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1596216162192">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1596377671183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596216162192" />
-    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1596216162192">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1596377671183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596216162192" />
-    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1596216162192">
+    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1596377671183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596216162192" />
-    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1596216162192">
+    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1596377671183">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596216162192" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
     <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1594965692989">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
