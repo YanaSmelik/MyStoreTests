@@ -3,14 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="23548c68-0ebb-4902-9833-e44ba9517c9f" name="Default Changelist" comment="1. Created config.properties file for storing tests data. &#10;2. Modified log entries patterns &#10;3.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuratin/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuratin/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/AddToCartModal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/AddToCartModal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CommonElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CommonElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/ContentMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/ContentMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CreateAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/CreateAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/HeaderMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/MyAccountPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/SignInPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/SignInPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/TShirtsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/pageObjects/TShirtsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_AddToCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_AddToCart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_LoginDDT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TC_LoginDDT.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/testCases/TestManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/ReadConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/ReadConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/Reporting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/Reporting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/XLUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mystore/utils/XLUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,22 +217,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1595221979612" />
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1596377671183">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1596559744652">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
-    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1596377671183">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596559744652" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1596559744652">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
-    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1596377671183">
+    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596559744652" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1596559744652">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
-    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1596377671183">
+    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596559744652" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1596559744652">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596377671183" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596559744652" />
     <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1594965692989">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -240,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1877" height="396" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1594965692989" />
-    <state x="484" y="82" width="998" height="708" key="SettingsEditor" timestamp="1595261688835">
+    <state x="484" y="82" width="998" height="708" key="SettingsEditor" timestamp="1596559800011">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="484" y="82" width="998" height="708" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1595261688835" />
+    <state x="484" y="82" width="998" height="708" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1596559800011" />
     <state x="655" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1595519048491">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
