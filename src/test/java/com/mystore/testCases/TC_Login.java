@@ -1,4 +1,5 @@
 package com.mystore.testCases;
+import com.mystore.pageObjects.CommonElements;
 import org.testng.annotations.Test;
 import com.mystore.pageObjects.SignInPage;
 import org.testng.Assert;
@@ -33,6 +34,10 @@ public class TC_Login extends TestManager {
             Assert.assertTrue(false);
             logger.info("Login test failed");
         }
+
+        CommonElements commonElements = new CommonElements(driver);
+        commonElements.clickSignOutButton();
+
         super.closeDown();
     }
 

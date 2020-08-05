@@ -23,11 +23,23 @@ public class AddToCartModal {
     @CacheLookup
     WebElement textOnSuccess;
 
+    @FindBy(xpath = "///*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
+    @CacheLookup
+    WebElement proceedToCheckoutButton;
+
     public WebElement getAddToCartModalWindow(){
         return addToCartModalWindow;
     }
 
     public String getTextOnSuccess(){
         return textOnSuccess.getText();
+    }
+
+    public WebElement getProceedToCheckoutButton(){
+        return proceedToCheckoutButton;
+    }
+
+    public void clickProceedToCheckoutButton(){
+        proceedToCheckoutButton.click();
     }
 }

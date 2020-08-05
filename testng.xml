@@ -7,8 +7,7 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="Test">
         <classes>
-            <class name="com.mystore.testCases.TC_CreateAccount">
-            </class>
+            <class name="com.mystore.testCases.TC_AddToCart"/>
         </classes>
     </test>
 </suite>

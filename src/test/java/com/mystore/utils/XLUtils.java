@@ -21,10 +21,6 @@ public class XLUtils {
     public static XSSFRow row;
     public static XSSFCell cell;
 
-    public XLUtils() {
-
-    }
-
 
     public static int getRowsTotalNum(String xlFile, String xlSheet) throws IOException {
         input = new FileInputStream(xlFile);

@@ -43,6 +43,8 @@ public class TC_AddToCart extends TestManager {
             Assert.assertTrue(false);
         }
 
+        //TODO implement closing part (switch to the pop-up window with help of a windowHandler)
+
         super.closeDown();
     }
 

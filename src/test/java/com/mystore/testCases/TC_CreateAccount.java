@@ -1,9 +1,9 @@
 package com.mystore.testCases;
 
+import com.mystore.pageObjects.CommonElements;
 import com.mystore.pageObjects.CreateAccountPage;
 import com.mystore.pageObjects.MyAccountPage;
 import com.mystore.pageObjects.SignInPage;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -11,10 +11,11 @@ import org.testng.Assert;
 
 import java.io.IOException;
 
+
 public class TC_CreateAccount extends TestManager {
 
     @Test
-    public void createAccount() throws IOException, InterruptedException {
+    public void createAccount() throws IOException {
         super.setup();
         driver.get(signInURL);
         logger.info("URL is opened");
@@ -22,7 +23,7 @@ public class TC_CreateAccount extends TestManager {
         driver.manage().window().maximize();
 
         SignInPage signInPage = new SignInPage(driver);
-        signInPage.enterEmailCreateAccount("joetest8@mail.com");
+        signInPage.enterEmailCreateAccount("joetest10@mail.com");
         signInPage.clickCreateAccountButton();
 
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
@@ -76,6 +77,9 @@ public class TC_CreateAccount extends TestManager {
             Assert.assertTrue(false);
             logger.info("createAccount test FAILED");
         }
+
+        CommonElements commonElements = new CommonElements(driver);
+        commonElements.clickSignOutButton();
 
         super.closeDown();
     }
