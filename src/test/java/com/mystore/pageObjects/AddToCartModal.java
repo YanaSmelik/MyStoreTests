@@ -15,7 +15,7 @@ public class AddToCartModal {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"layer_cart\"]/div[1]")
+    @FindBy(id = "layer_cart")
     @CacheLookup
     WebElement addToCartModalWindow;
 
@@ -23,7 +23,7 @@ public class AddToCartModal {
     @CacheLookup
     WebElement textOnSuccess;
 
-    @FindBy(xpath = "///*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
+    @FindBy(xpath = "//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
     @CacheLookup
     WebElement proceedToCheckoutButton;
 

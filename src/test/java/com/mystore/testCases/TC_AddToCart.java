@@ -1,17 +1,17 @@
 package com.mystore.testCases;
 
-import com.mystore.pageObjects.AddToCartModal;
-import com.mystore.pageObjects.ContentMenu;
-import com.mystore.pageObjects.SignInPage;
-import com.mystore.pageObjects.TShirtsPage;
+import com.mystore.pageObjects.*;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class TC_AddToCart extends TestManager {
 
     @Test
-    public void addToCart() {
+    public void addToCart() throws InterruptedException {
         super.setup();
         driver.get(signInURL);
         logger.info("URL is opened");
@@ -43,7 +43,24 @@ public class TC_AddToCart extends TestManager {
             Assert.assertTrue(false);
         }
 
-        //TODO implement closing part (switch to the pop-up window with help of a windowHandler)
+        AddToCartModal addToCartModal = new AddToCartModal(driver);
+
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.elementToBeClickable(addToCartModal.getProceedToCheckoutButton()));
+        addToCartModal.clickProceedToCheckoutButton();
+
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
+        wait.until(ExpectedConditions.elementToBeClickable(shoppingCartPage.getYourShoppingCartLabel()));
+
+        shoppingCartPage.clickRemoveItemButton();
+
+        Thread.sleep(3_000);
+
+        if(shoppingCartPage.getYourShoppingCartLabel().isDisplayed()){ // TODO fix: element is not attached to the page document
+            super.closeDown();
+        }else{
+            throw new AssertionError();
+        }
 
         super.closeDown();
     }
