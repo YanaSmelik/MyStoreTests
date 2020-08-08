@@ -27,6 +27,10 @@ public class ShoppingCartPage {
     @CacheLookup
     WebElement yourCartIsEmptyAlert;
 
+    @FindBy(xpath = "//*[@id=\"center_column\"]/p[2]/a[1]")
+    @CacheLookup
+    WebElement proceedToCheckoutButton;
+
     public WebElement getYourShoppingCartLabel(){
         return yourShoppingCartLabel;
     }
@@ -37,5 +41,9 @@ public class ShoppingCartPage {
 
     public WebElement getYourCartIsEmptyAlert(){
         return yourCartIsEmptyAlert;
+    }
+
+    public WebElement getProceedToCheckoutButton(){
+        return proceedToCheckoutButton;
     }
 }

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TC_AddToCart extends TestManager {
 
     @Test
-    public void addToCart() throws InterruptedException {
+    public void addToCart()  {
         super.setup();
         driver.get(signInURL);
         logger.info("URL is opened");
@@ -54,11 +54,13 @@ public class TC_AddToCart extends TestManager {
 
         shoppingCartPage.clickRemoveItemButton();
 
-        Thread.sleep(3_000);
 
-        if(shoppingCartPage.getYourShoppingCartLabel().isDisplayed()){ // TODO fix: element is not attached to the page document
+        wait.until(ExpectedConditions.invisibilityOf(shoppingCartPage.getProceedToCheckoutButton()));
+
+
+        if (shoppingCartPage.getYourCartIsEmptyAlert().isDisplayed()) {
             super.closeDown();
-        }else{
+        } else {
             throw new AssertionError();
         }
 
